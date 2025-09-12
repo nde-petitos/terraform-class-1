@@ -33,3 +33,8 @@ variable "listofrestaurants" {
   type    = set(string)
   default = ["Restaurant 1 ", "Restaurant 2 ", "Restaurant 3"]
 }
+
+variable "randomnumber" {
+  type = number
+  default = 200345
+}
