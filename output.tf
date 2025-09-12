@@ -1,5 +1,5 @@
 output "first-name" {
-  value = var.fistname
+  value = var.firstname
 }
 
 output "last-name" {
