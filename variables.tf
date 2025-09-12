@@ -38,3 +38,8 @@ variable "randomnumber" {
   type = number
   default = 200345
 }
+
+variable "isahuman" {
+  type = bool
+  default = false
+}
