@@ -17,3 +17,7 @@ output "list-of-restaurant" {
 output "random-number" {
   value = var.randomnumber
 }
+
+output "display-a-boolean" {
+  value = var.isahuman
+}
