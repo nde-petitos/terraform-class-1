@@ -13,3 +13,7 @@ output "year-of-arrival" {
 output "list-of-restaurant" {
  value = tolist(var.listofrestaurants)
 }
+
+output "random-number" {
+  value = var.randomnumber
+}
