@@ -28,3 +28,8 @@ variable "lastname" {
   type = string
   default = "Petitos"
 }
+
+variable "listofrestaurants" {
+  type    = set(string)
+  default = ["Restaurant 1 ", "Restaurant 2 ", "Restaurant 3"]
+}
