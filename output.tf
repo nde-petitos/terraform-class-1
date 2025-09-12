@@ -9,3 +9,7 @@ output "last-name" {
 output "year-of-arrival" {
   value = var.arrivalyear
 }
+
+output "list-of-restaurant" {
+ value = tolist(var.listofrestaurants)
+}
