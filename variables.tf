@@ -13,3 +13,18 @@ variable "client_secret" {
 variable "tenant_id" {
   type = string
 }
+
+variable "arrivalyear" {
+  type = number
+  default = 2025
+}
+
+variable "firstname" {
+  type = string
+  default = "Nelson"
+}
+
+variable "lastname" {
+  type = string
+  default = "Petitos"
+}
