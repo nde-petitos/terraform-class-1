@@ -34,5 +34,5 @@
 # }
 
 output "display" {
-  value = [for key, v in var.sports : v+","]
+  value = join(",", var.sports)
 }
