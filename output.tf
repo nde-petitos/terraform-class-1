@@ -34,5 +34,5 @@
 # }
 
 output "display" {
-  value = [for key in var.sports : key+","]
+  value = [for key, v in var.sports : v+","]
 }
