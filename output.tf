@@ -23,5 +23,5 @@ output "display-a-boolean" {
 }
 
 output "display-favorite-five" {
-  value = {for key, listvalues in var.var.favoritefive : key =>  tolist(listvalues)}
+  value = {for key, listvalues in var.favoritefive : key => tolist(listvalues)}
 }
