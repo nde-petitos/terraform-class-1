@@ -29,6 +29,10 @@
 #   value = local.full_name
 #  }
 
-output "display_split_server_name" {
-  value = split("-", var.server_name)
+# output "display_split_server_name" {
+#   value = split("-", var.server_name)
+# }
+
+output "display" {
+  value = [for key in var.sports : key+","]
 }

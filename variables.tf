@@ -64,7 +64,12 @@ variable "tenant_id" {
 #   default = "terraform-test"
 # }
 
-variable "server_name" {
-  type = string 
-  default = "server-prod-01"
+# variable "server_name" {
+#   type = string 
+#   default = "server-prod-01"
+# }
+
+variable "sports" {
+  type = list(string)
+  default = ["football","basketball","gaming","badminton","food"]
 }
