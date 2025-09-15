@@ -34,5 +34,5 @@
 # }
 
 output "display" {
-  value = join(",", var.sports)
+  value = split(",", var.movies)
 }
