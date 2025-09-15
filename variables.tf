@@ -73,8 +73,3 @@ variable "sports" {
   type = list(string)
   default = ["football","basketball","gaming","badminton","food"]
 }
-
-variable "sports" {
-  type = list(string)
-  default = ["football","basketball","gaming","badminton","food"]
-}
