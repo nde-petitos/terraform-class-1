@@ -69,7 +69,11 @@ variable "tenant_id" {
 #   default = "server-prod-01"
 # }
 
-variable "sports" {
-  type = list(string)
-  default = ["football","basketball","gaming","badminton","food"]
+# variable "sports" {
+#  type = list(string)
+# default = ["football","basketball","gaming","badminton","food"]
+#}
+variable "movies" {
+  type = string
+  default = "Jango, Hoow to train your dragon, Shuttle islan, The Prestige, Deadpool"
 }
