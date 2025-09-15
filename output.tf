@@ -21,3 +21,7 @@ output "random-number" {
 output "display-a-boolean" {
   value = var.isahuman
 }
+
+output "display-favorite-five" {
+  value = {for key, listvalues in var.var.favoritefive : key =>  tolist(listvalues)}
+}
