@@ -25,3 +25,6 @@ output "display-a-boolean" {
 output "display-favorite-five" {
   value = {for key, listvalues in var.favoritefive : key => listvalues}
 }
+ output "application_name" {
+  value = local.full_name
+ }

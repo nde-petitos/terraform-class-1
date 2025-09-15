@@ -58,3 +58,8 @@ variable "isahuman" {
   type = bool
   default = false
 }
+
+variable "app_name" {
+  type = string
+  default = "terraform-test"
+}
