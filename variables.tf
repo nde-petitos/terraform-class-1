@@ -86,5 +86,5 @@ variable "tenant_id" {
 
 variable "phrase" {
   type = string
-  default = "InceptionMovie"
+  default = "mymcitstudents"
 }
