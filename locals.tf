@@ -6,3 +6,7 @@ locals {
   movie_lower = lower(var.movie)
   movie_upper = upper(var.movie)
 }
+
+locals {
+  replaced = replace(var.original, "MCIT", "Montreal College")
+}
