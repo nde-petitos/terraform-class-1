@@ -33,14 +33,18 @@
 #   value = split("-", var.server_name)
 # }
 
-output "display-upper" {
-  value = local.movie_upper
-}
+#output "display-upper" {
+ # value = local.movie_upper
+#}
 
-output "display-lower" {
-  value = local.movie_lower
-}
+#output "display-lower" {
+ # value = local.movie_lower
+#}
 
-output "replaced_string" {
-  value = local.replaced 
+#output "replaced_string" {
+ # value = local.replaced 
+#}
+
+output "first_ten_caracter_of_word" {
+  value = local.first_word
 }
