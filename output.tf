@@ -33,6 +33,10 @@
 #   value = split("-", var.server_name)
 # }
 
-output "display" {
-  value = split(",", var.movies)
+output "display-upper" {
+  value = local.movie_upper
+}
+
+output "display-upper" {
+  value = local.movie_lower
 }
