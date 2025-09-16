@@ -12,5 +12,5 @@
 #}
 
 locals {
-  first_word = substr(var.phrase, 0, 9)
+  first_word = substr(var.phrase, find("mcit", var.phrase), find("mcit", var.phrase)+3)
 }
