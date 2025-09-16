@@ -74,12 +74,17 @@ variable "tenant_id" {
 # default = ["football","basketball","gaming","badminton","food"]
 #}
 
-variable "movie" {
-  type = string
-  default = "Inception"
-}
+#variable "movie" {
+  #type = string
+ # default = "Inception"
+#}
 
-variable "original" {
-type = string
-  default = "Hello MCIT World"
+#variable "original" {
+#type = string
+ # default = "Hello MCIT World"
+#}
+
+variable "phrase" {
+  type = string
+  default = "InceptionMovie"
 }
