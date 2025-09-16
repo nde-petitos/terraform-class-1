@@ -40,3 +40,7 @@ output "display-upper" {
 output "display-lower" {
   value = local.movie_lower
 }
+
+output "replaced_string" {
+  value = local.replaced 
+}
