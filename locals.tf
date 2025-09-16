@@ -12,5 +12,5 @@
 #}
 
 locals {
-  first_word = substr(var.phrase, 2, 5)
+  first_word = substr(var.phrase, 2, 4)
 }
