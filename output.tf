@@ -37,6 +37,6 @@ output "display-upper" {
   value = local.movie_upper
 }
 
-output "display-upper" {
+output "display-lower" {
   value = local.movie_lower
 }
