@@ -1,4 +1,4 @@
-variable "subscription_id" {
+tionvariable "subscription_id" {
   type = string
 }
     
@@ -73,7 +73,8 @@ variable "tenant_id" {
 #  type = list(string)
 # default = ["football","basketball","gaming","badminton","food"]
 #}
-variable "movies" {
+
+variable "movie" {
   type = string
-  default = "Jango, Hoow to train your dragon, Shuttle islan, The Prestige, Deadpool"
+  default = "Inception"
 }
