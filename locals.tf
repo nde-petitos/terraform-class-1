@@ -11,6 +11,6 @@
  # replaced = replace(var.original, "MCIT", "Montreal College")
 #}
 
-locals {
-  first_word = substr(var.phrase, 2, 4)
-}
+#locals {
+ # first_word = substr(var.phrase, 2, 4)
+#}
