@@ -84,7 +84,7 @@ variable "tenant_id" {
  # default = "Hello MCIT World"
 #}
 
-variable "phrase" {
-  type = string
-  default = "mymcitstudents"
-}
+#variable "phrase" {
+#  type = string
+#  default = "mymcitstudents"
+#}
