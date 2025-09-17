@@ -8,5 +8,5 @@ locals {
 }
 
 output "append_hello_to_list_names" {
-  value = var.append_list_names
+  value = local.append_list_names
 }
