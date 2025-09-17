@@ -45,6 +45,6 @@
  # value = local.replaced 
 #}
 
-output "find_mcit_mcit" {
-  value = local.first_word
-}
+#output "find_mcit_mcit" {
+ # value = local.first_word
+#}
