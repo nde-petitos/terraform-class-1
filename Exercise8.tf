@@ -4,9 +4,9 @@ variable "list_names" {
 }
 
 locals {
-  append_list_names = [for name in var.list_names : "Hallo ${name}"]
+  append_list_names = [for v in var.list_names : "Hello ${v}"]
 }
 
-output {
+output "append_hello_to_list_names" {
   value = var.append_list_names
 }
