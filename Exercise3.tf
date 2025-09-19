@@ -14,9 +14,9 @@ locals {
    average      = length(local.score_pairs) == 0 ? 0 : sum([for p in local.score_pairs : p.score]) / length(local.score_pairs)
 }
 
-output "scores_map" { 
-  value = local.scores_map 
-}
-output "avg_score"  { 
-  value = local.average    
-}
+# output "scores_map" { 
+#   value = local.scores_map 
+# }
+# output "avg_score"  { 
+#   value = local.average    
+# }

@@ -9,6 +9,6 @@ variable "domain" {
 locals {
  emails = { for u in var.usernames : u => "${u}@${var.domain}" } # Add example.com as surfix to every string in the array usernames
 }
-output "emails" {
- value = local.emails # Display the result
-}
+# output "emails" {
+#  value = local.emails # Display the result
+# }

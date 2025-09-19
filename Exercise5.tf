@@ -8,10 +8,10 @@ locals {
    squares = [for n in local.evens : n * n]
 }
 
-output "evens"   { 
-  value = local.evens 
-}
+# output "evens"   { 
+#   value = local.evens 
+# }
 
-output "squares" { 
-  value = local.squares 
-}
+# output "squares" { 
+#   value = local.squares 
+# }

@@ -11,4 +11,4 @@ locals {
  }
 }
 
-output "grouped_by_initial" { value = local.grouped }
+# output "grouped_by_initial" { value = local.grouped }
