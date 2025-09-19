@@ -22,6 +22,6 @@ variable "foods" {
 #     value = [for n in var.hotels : substr(n, 0, 2)]
 # }
 
-output "first_two_letters" {
+output "sum_food_lenght" {
     value = sum(tolist([for n in var.foods : length(n)]))
 }
