@@ -15,5 +15,5 @@ variable "activities" {
 # }
 
 output "first_two_letters" {
-    value = [for n in var.hotels : substr(n, 0, 3)]
+    value = [for n in var.hotels : substr(n, 0, 2)]
 }
