@@ -13,3 +13,7 @@ variable "activities" {
 # output "arrow_display_aactivities" {
 #     value = join("->", var.activities)
 # }
+
+output "first_two_letters" {
+    value = [for n in var.var.hotels : substr(n, 0, 3)]
+}
