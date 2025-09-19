@@ -7,7 +7,7 @@ variable "activities" {
 }
 
 output "Hotel_upper" {
-    value = [for v in var.var.hotels : v == "Hyatt" ? upper(v) : v]
+    value = [for v in var.hotels : v == "Hyatt" ? upper(v) : v]
 } 
 
 output "arrow_display_aactivities" {
