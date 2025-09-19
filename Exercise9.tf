@@ -1,14 +1,14 @@
-variable "hotels" {
-    default = ["Marriot", "Hilton", "Sheraton", "Hyatt"]
-}
+# variable "hotels" {
+#     default = ["Marriot", "Hilton", "Sheraton", "Hyatt"]
+# }
 
-variable "activities" {
-    default = ["eat", "sleep", "code", "repeat"]
-}
+# variable "activities" {
+#     default = ["eat", "sleep", "code", "repeat"]
+# }
 
-variable "foods" {
-    default = ["Pizza", "Burger", "Sushi", "Tacos"]
-}
+# variable "foods" {
+#     default = ["Pizza", "Burger", "Sushi", "Tacos"]
+# }
 
 # output "Hotel_upper" {
 #     value = [for v in var.hotels : v == "Hyatt" ? upper(v) : v]
@@ -22,6 +22,6 @@ variable "foods" {
 #     value = [for n in var.hotels : substr(n, 0, 2)]
 # }
 
-output "sum_food_lenght" {
-    value = sum(tolist([for n in var.foods : length(n)]))
-}
+# output "sum_food_lenght" {
+#     value = sum(tolist([for n in var.foods : length(n)]))
+# }
