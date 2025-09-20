@@ -22,7 +22,7 @@ locals {
 }
 
 locals {
-  longuest_size = element(sort(local.tmps), length(var.foods)-1)
+  longuest_size = tonumber(element(sort(local.tmps), length(var.foods)-1))
 }
 
 
