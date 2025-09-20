@@ -13,10 +13,27 @@ variable "activities" {
 }
 
 variable "foods" {
+    type = list(string)
     default = ["Pizza", "Burger", "Sushi", "Tacos", "Pasta"]
+}
+
+locals {
+    tmps = [for n in var.foods : length(n)]
+}
+
+locals {
+  longuest_size = element(sort(local.tmps), length(var.foods)-1)
 }
 
 
 output "cygle" {
     value = join("", [for v in var.activities : upper(substr(v, 0,1))])
+}
+
+output "long_word" {
+    value = [for n in var.foods : n if length(n) == local.longuest_size]
+}
+
+output "longuest_size" {
+  value = local.longuest_size
 }
