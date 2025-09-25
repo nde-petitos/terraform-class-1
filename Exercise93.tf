@@ -40,10 +40,10 @@ resource "azurerm_linux_virtual_machine" "vm_nelson" {
     azurerm_network_interface.network_interface_example.id,
   ]
 
-  admin_ssh_key {
-    username   = "adminuser"
-    public_key = file("~/.ssh/id_rsa.pub")
-  }
+#   admin_ssh_key {
+#     username   = "adminuser"
+#     public_key = file("~/.ssh/id_rsa.pub")
+#   }
 
   os_disk {
     caching              = "ReadWrite"
