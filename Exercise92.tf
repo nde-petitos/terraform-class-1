@@ -25,6 +25,35 @@ variable "us_items" {
 #############################
 # Windows Web Apps for US items
 #############################
+
+resource "azurerm_service_plan" "windows_plan_us" {
+  name                = "${var.project_prefix}-win-plan-us"
+  location            = "East US"
+  resource_group_name = azurerm_resource_group.rg.name
+
+  os_type  = "Windows"
+  sku_name = "P1v3"
+  tags = {
+    environment = "dev"
+    project     = var.project_prefix
+  }
+}
+
+resource "random_string" "suffix" {
+  length  = 5
+  upper   = false
+  special = false
+}
+
+resource "azurerm_resource_group" "rg" {
+  name     = "${var.project_prefix}-rg"
+  location = "Canada Central" # RG location can differ from resources
+  tags = {
+    environment = "dev"
+    project     = var.project_prefix
+  }
+}
+
 locals {
   us_map = {
     for item in var.us_items :
