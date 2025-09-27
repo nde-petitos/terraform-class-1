@@ -113,5 +113,5 @@ variable "une_chaine" {
 }
 
 output "resultat" {
-    value =  var.une_chaine == "Lydienne" ? "j'ai trouve ton nom" : "Je ne connais pas ton nom"
+    value =  var.une_chaine == "Nelsom" ? "j'ai trouve ton nom" : "Je ne connais pas ton nom"
 }
