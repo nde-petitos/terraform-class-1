@@ -1,6 +1,6 @@
 variable "policy_name" {
     type = list(string)
-    default = ["demo-wafpolicy1", "demo-wafpolicy2", "demo-wafpolicy3", "demo-wafpolicy4", "demo-wafpolicy5"]
+    default = ["demo-wafpolicy1", "demo-wafpolicy2", "demo-wafpolicy3"]
 }
 
 locals {
