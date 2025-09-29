@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "rg" {
 }
 
 variable "storage_name" {
-    default = ["SA1", "SA2", "SA3", "SA4", "SA5", "SA6", "SA7", "SA8", "SA9", "SA10"]
+    default = ["sa1", "sa2", "sa3", "sa4", "sa5", "sa6", "sa7", "sa8", "sa9", "sa10"]
 }
 
 locals {
