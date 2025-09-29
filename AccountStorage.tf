@@ -8,7 +8,7 @@ variable "storage_name" {
 }
 
 locals {
-  transform = {for v in var.var.storage_name : v => v}
+  transform = {for v in var.storage_name : v => v}
 }
 
 variable "sa_settings" {
