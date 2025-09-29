@@ -7,6 +7,10 @@ variable "storage_name" {
     default = ["SA1", "SA2", "SA3", "SA4", "SA5", "SA6", "SA7", "SA8", "SA9", "SA10"]
 }
 
+locals {
+  transform = {for v in var.var.storage_name : v => v}
+}
+
 variable "sa_settings" {
     default = {
         account_tier = "Standard"
@@ -16,7 +20,7 @@ variable "sa_settings" {
 }
 
 resource "azurerm_storage_account" "storage_account" {
-    for_each = zipmap(var.storage_name, var.storage_name)
+    for_each = local.transform
     name                     = each.value
     resource_group_name      = azurerm_resource_group.rg.name
     location                 = azurerm_resource_group.rg.location
