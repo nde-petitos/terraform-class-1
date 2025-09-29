@@ -16,7 +16,7 @@ variable "sa_settings" {
 }
 
 resource "azurerm_storage_account" "storage_account" {
-    for_each = var.storage_name
+    for_each = zipmap(var.storage_name, var.storage_name)
     name                     = each.value
     resource_group_name      = azurerm_resource_group.rg.name
     location                 = azurerm_resource_group.rg.location
