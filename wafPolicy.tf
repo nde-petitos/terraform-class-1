@@ -106,12 +106,3 @@
 #         }
 #     }
 # }
-
-variable "une_chaine" {
-    type = string
-    default = "Lydienne"
-}
-
-output "resultat" {
-    value =  var.une_chaine == "Nelsom" ? "j'ai trouve ton nom" : "Je ne connais pas ton nom"
-}
